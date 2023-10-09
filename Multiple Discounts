@@ -1,0 +1,35 @@
+https://replit.com/join/okdpozjyfz-lucasleite32
+
+p = float(input("Welcome, what's the price of your product? "))
+print()
+print("Perfect, since you're a new customer, you have a choice of three coupons: A, B, or C")
+print()
+print("A --> 15%")
+print("B --> 10%")
+print("C --> 5%")
+print()
+r = input("Which one do you want to use? ").upper()
+print()
+if r == "A":
+    discount = 0.15  
+elif r == "B":
+    discount = 0.10
+elif r == "C":
+    discount = 0.05
+else:
+    print("Please, choose between A, B, or C")
+    exit()
+
+discounted_price = p * (1 - discount)  
+
+print("Ok, so your price is", discounted_price)
+
+print()
+u = int(input("What's the amount of units you're buying? "))
+if u > 10:
+    discounted_price *= 0.95  # Apply an extra 5% discount if the units are greater than 10
+    print("You'll have an extra 5% discount")
+    print()
+    print("So your final price is", discounted_price)
+else:
+    print("OK, thank you")
