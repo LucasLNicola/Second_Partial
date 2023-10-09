@@ -1,0 +1,18 @@
+https://replit.com/join/ldiolmfkwv-lucasleite32
+
+age = int(input("How old are you? "))
+print()
+
+retire = int(input("When do you intend to retire? "))
+print()
+
+pay = float(input("What is the desired retirement amount? "))
+print()
+
+rate = float(input("What's the annual interest rate? "))
+print()
+
+mp = retire - age
+PMT = (pay * (rate/12)) / (((1 + rate/12)**(mp*12)) - 1) / ((1 + rate/12)**(-mp))
+
+print("To reach your retirement goal, you need to save approximately", PMT, "per month")
