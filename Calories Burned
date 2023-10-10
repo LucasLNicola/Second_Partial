@@ -1,0 +1,23 @@
+https://replit.com/join/yisjzveyhw-lucasleite32
+
+print("There're three main activities this program can help you calculating the calories burned")
+print()
+print("running")
+print("swimming")
+print("cycling")
+print()
+a = input("What activity are you doing? ")
+print()
+w = float(input("What's your weight? "))
+print()
+t = float(input("What's the duration of this activity in nminutes? "))
+print()
+
+# MET is the metabolism equivalent task
+MET = {"running": 7.0, "swimming": 8.0, "cycling": 4.0}
+
+if a in MET:
+    calories_burned = MET[a] * (w / 200) * (t / 60)
+    print("You burned approximately", calories_burned, "calories during", t, "minutes of", a)
+else:
+    print("I'm sorry, this activity isn't available")
