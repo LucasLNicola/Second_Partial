@@ -1,0 +1,34 @@
+https://replit.com/join/kwfflfkxtd-lucasleite32
+
+q = float(input("What is the quantity you want to convert? "))
+print()
+origin = input("What is the unit origin?, miles, km, liters, gallons, fahrenheit, celcius: ")
+print()
+dest = input("What is the unit destination?, miles, km, liters, gallons, fahrenheit, celcius: ")
+print()
+if origin == "miles" and dest == "km":
+  km = q*1.609
+  print(q, "miles is equal to", km, "km")
+  
+elif origin == "km" and dest == "miles":
+    mi = q / 1.609
+    print(q, "km is equal to", mi, "miles")
+  
+elif origin == "liters" and dest == "gallons":
+    gl = q * 0.264
+    print(q, "liters is equal to", gl, "gallons")
+  
+elif origin == "gallons" and dest == "liters":
+    l = q / 0.264
+    print(q, "gallons is equal to", l, "liters")
+
+elif origin == "fahrenheit" and dest == "celcius":
+  c = (q - 32) * 5/9
+  print(q, "fahrenheit is equal to", c, "celcius")
+
+elif origin == "celcius" and dest == "fahrenheit":
+  f = (q * 9/5) + 32
+  print(q, "celcius is equal to", f, "fahrenheit")
+  
+else:
+   print("Conversion not supported, ERROR, ERROR, ERROR")
