@@ -1,0 +1,39 @@
+https://replit.com/join/uwxvksatyx-lucasleite32
+
+print("Hello, I'm your virtual assistent")
+print()
+print("I'll help you taking care of your plant Ruby")
+print()
+temperature = float(input("What is the ambient temperature where Ruby is in Celsius? "))
+
+if temperature >= 20 and temperature <= 25:
+    print("Good conditions")
+    print()
+  
+elif temperature < 20:
+    print("You should bring it inside the house")
+    print()
+  
+elif temperature > 25:
+    print("Bring it inside the house and turn on the fan")
+    print()
+
+humidity = float(input("What is the ambient humidity around Ruby? "))
+print()
+day = input("And what is the day today? ")
+print()
+
+if humidity < 20 or day in ["tuesday", "thursday", "saturday"]:
+    print("You should water Ruby")
+
+elif humidity >= 20 and humidity <= 22 and day in ["tuesday", "thursday", "saturday"]:
+    print("Suitable humidity, but you should water because of the day")
+
+elif humidity >= 20 and humidity <= 22 and day in ["monday", "wednesday", "friday", "sunday"]:
+    print("Suitable humidity and you don't need to water")
+
+elif humidity > 22 and day in ["monday", "wednesday", "friday", "sunday"]:
+    print("It's not necessary to water Ruby")
+
+print()
+print("Thank you for using my virtual assistant")
